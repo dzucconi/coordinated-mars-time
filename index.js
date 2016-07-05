@@ -5,9 +5,7 @@
     return function(hh, mm, ss) {
       return '<div class="' + name + '">' +
         '<span class="digits">' + pad(hh) + '</span>' +
-        '<span class="separator">:</span>' +
         '<span class="digits">' + pad(mm) + '</span>' +
-        '<span class="separator">:</span>' +
         '<span class="digits">' + pad(ss) + '</span>' +
       '</div>';
     };

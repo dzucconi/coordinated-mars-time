@@ -9,9 +9,15 @@
 body {
   background-color: black;
   font-family: 'unionregular', sans-serif;
-  font-size: 150px;
+  font-size: 100px;
   text-rendering: optimizeLegibility;
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 50px;
+  }
 }
 
 .mars,
@@ -32,13 +38,6 @@ body {
 
 .earth {
   color: blue;
-}
-
-.separator {
-  display: inline-block;
-  margin-right: .075em;
-  -webkit-transform: translateY(-.05em);
-          transform: translateY(-.05em);
 }
 
 .digits {
